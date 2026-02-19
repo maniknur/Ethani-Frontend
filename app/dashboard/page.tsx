@@ -7,8 +7,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui';
-import { usePriceSimulation } from '@/hooks/usePriceSimulation';
-import { getStatusColor, getStatusEmoji, getStatusLabel } from '@/lib/price-data';
 
 // ============================================================================
 // CUSTOM CSS ANIMATIONS - Inline styles for live dashboard feel
