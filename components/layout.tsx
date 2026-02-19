@@ -2,7 +2,9 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import logoImage from './ethani_logo_under_1mb.png';
 
 interface NavItem {
   href: string;
@@ -130,7 +132,13 @@ export function Sidebar() {
                 : 'drop-shadow(0 0 8px rgba(34, 197, 94, 0.15))'
             }}
           >
-            🌾
+            <Image 
+              src={logoImage}
+              alt="ETHANI Logo"
+              width={32}
+              height={32}
+              className="w-8 h-8 drop-shadow-lg"
+            />
           </span>
           <div>
             <h1 className="text-lg font-bold text-stability-text group-hover:text-stability-green transition-colors">ETHANI</h1>
