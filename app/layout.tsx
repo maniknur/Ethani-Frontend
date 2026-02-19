@@ -1,11 +1,15 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Sidebar, Header } from '@/components/layout';
 import './globals.css';
 
 export const metadata: Metadata = {
   title: 'ETHANI - Food Price Stabilization',
   description: 'Rule-based, transparent food price stabilization system',
-  viewport: 'width=device-width, initial-scale=1',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
