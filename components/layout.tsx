@@ -2,9 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import logoImage from './ethani_logo_under_1mb.png';
 
 interface NavItem {
   href: string;
@@ -121,7 +119,7 @@ export function Sidebar() {
           onMouseLeave={() => setIsLogoHovered(false)}
         >
           <span 
-            className={`text-3xl transition-all duration-300 ${
+            className={`transition-all duration-300 ${
               isLogoHovered 
                 ? 'animate-sway-fast drop-shadow-lg' 
                 : 'animate-sway'
@@ -132,11 +130,9 @@ export function Sidebar() {
                 : 'drop-shadow(0 0 8px rgba(34, 197, 94, 0.15))'
             }}
           >
-            <Image 
-              src={logoImage}
+            <img 
+              src="/ethani-logo.png"
               alt="ETHANI Logo"
-              width={32}
-              height={32}
               className="w-8 h-8 drop-shadow-lg"
             />
           </span>
